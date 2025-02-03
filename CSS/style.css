@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0E0E0E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+nav{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+nav a{
+    color: #7B7B7B;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: white;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+p span{
+    color: #AA0000;
+}
+header{
+    max-width: 840px;
+    width: 100%;
+    min-height: 72px;
+    height: 100%;
+    padding: 16px 0;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.avatar_container{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* main */
+main{
+    max-width: 840px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.movieOfTheMonth_wrapper{
+    background-image: url(../image/backgorund_image/image.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.head_description_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 91px;
+    padding: 40px 0 30px 40px;
+}
+.container_head{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.head{
+    color: #7B7B7B;
+}
+.movie_name{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.rating_container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.imdb{
+    color: #7B7B7B;
+}
+.stars_container{
+    display: flex;
+    gap: 8px;
+}
+.description_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 355px;
+    width: 100%;
+    flex-shrink: 0;
+}
+.desc_text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.desc_head{
+    word-spacing: 12px;
+}
+.description{
+    color: #7B7B7B;
+    font-size: 14px;
+    line-height: 20px;
+}
+.description_wrapper button{
+    width: fit-content;
+    padding: 12px 24px;
+    background: #a00;
+    border: none;
+    box-shadow: 5px 2px 11.9px 0px #A00;
+    color: white;
+    border-radius: 8px 32px;
+}
+
+.batman{
+    align-self: flex-start;
+}
+
+.recomended_container{
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.recomended_container p{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+    
+form{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #191919;
+    padding: 8px 16px 8px 12px;
+    border-radius: 24px;
+}
+.search input{
+    border: none;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+.search:focus-within{
+    border: 1px solid #a00;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown > label{
+    background-color: #191919;
+    color: #7B7B7B;
+    padding: 8px 16px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.dropdown input{
+    display: none;
+}
+
+.dropdown_menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #191919;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92px;
+    padding: 4px;
+    display: none;
+}
+
+.dropdown label:hover ~ .dropdown_menu{
+    display: block;
+}
+
+.dropdown .dropdown_menu:hover{
+    display: block;
+}
+
+.dropdown_menu a{
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown_menu a:hover{
+    background-color: #818181;
+    border-radius: 24px;
+}
+
+.dropdown_menu_category{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #191919;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+    padding: 4px;
+    display: none;
+}
+.dropdown .dropdown_menu_category:hover{
+    display: block;
+}
+.dropdown label:hover ~ .dropdown_menu_category{
+    display: block;
+}
+.dropdown_menu_category a{
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    text-decoration: none;
+}
+.dropdown_menu_category a:hover{
+    background-color: #818181;
+    border-radius: 24px;
+}
+
+
+.movies_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 240px;
+}
+.movies_container{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.movie_card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.movie_card button{
+    position: absolute;
+    padding: 12px 24px;
+    border-radius: 8px 32px;
+    box-shadow: 5px 2px 11.9px 0px #A00;
+    background-color: #a00;
+    color: white;
+    border: none;
+    display: none;
+}
+.movie_card:hover > img{
+    filter: blur(2px);
+
+}
+.movie_card:hover > button{
+    display: inline-block;
+}
+
+
+/* tablet */
+.movies_wrapper_tablet{
+    display: none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    body{
+        padding: 0 32px;
+    }
+    .movies_wrapper{
+        display: none;
+    }
+    .movies_wrapper_tablet{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 233px;
+    }
+    .movies_container_tablet{
+        display: flex;
+        gap: 24px;
+        width: fit-content;
+        align-self: center;
+    }
+    .movie_card_tablet{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .movie_card_tablet button{
+        display: none;
+        position: absolute;
+        padding: 12px 24px;
+        border-radius: 8px 32px;
+        box-shadow: 5px 2px 11.9px 0px #A00;
+        background-color: #a00;
+        color: white;
+        border: none;
+        display: none;
+    }
+    .movie_card_tablet:hover > img {
+        filter: blur(2px)
+    }
+    .movie_card_tablet:hover > img ~ button{
+        display: inline-block;
+        border: 1px solid red;
+    }
+}
+
+/* for phone */
+.burger_menu{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        padding: 0 16px;
+    }
+    .header_container{
+        flex-wrap: nowrap;
+    }
+    nav{
+        display: none;
+    }
+    .burger_menu{
+        display: inline-block;
+        order: -1;
+    }
+    .avatar_container p{
+        display: none;
+    }
+    .batman{
+        display: none;
+    }
+    .head_description_wrapper{
+        padding: 24px 8px 10px 16px;
+    }
+    .search{
+        flex: 1;
+    }
+    .dropdown{
+        flex: 1;
+    }
+    .movie_card{
+        flex: 1;
+    }
+    .movie_card img{
+        flex: 1;
+    }
+}
